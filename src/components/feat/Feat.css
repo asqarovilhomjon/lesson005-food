@@ -12,11 +12,15 @@
     color: #DC780B;
     font-family: rob;
     margin-bottom: 7px;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 20%;
+    opacity: 70%;
 }
 .feat__subtitle{
     font-size: 31px;
     font-weight: 700;
-    font-family: phil;
+    font-family: philosopher;
     margin-bottom: 44px;
 }
 .feat__wrapper{
@@ -50,7 +54,8 @@
     font-weight: 400;
     font-family: rob;
     text-align: center;
-    color: #150C01;
+    color: rgba(21, 12, 1, 1);
+    opacity: 70%;
 }
 
 
