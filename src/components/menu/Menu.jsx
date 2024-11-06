@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import "./Menu.css"
 import axios from 'axios'
 import star from "../../assets/Group 85.png"
-import Loading from '../loading/Loading'
 import { useFetch } from '../../hooks/useFetch'
 
 
@@ -15,7 +14,7 @@ function Menu() {
 
     useEffect(()=>{
         axios
-          .get(`${BASE_URL}/products?limit=${6 * offset}`)
+          .get(`${BASE_URL}/products?limit=${15 * offset}`)
           .then(res => {
             setProducts(res.data.products)
           })
@@ -46,10 +45,8 @@ function Menu() {
                     <p className='menu__desc'>There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, </p>
                 </div>
                 <div className="menu__wrapper">{productItems}</div>
-                <button onClick={()=> setOffset(p => p + 1)} className='btns'>See more</button>
             </div>
         </section>
-        <Loading/>
     </main>
   )
 }
