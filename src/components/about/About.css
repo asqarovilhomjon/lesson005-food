@@ -41,8 +41,8 @@
     transition: .5s;
 }
 .about__btn:hover{
-    background-color: #000;
-    transform: translateY(-10px);
+    background: #d1924e;
+    transform: scale(.95);
 }
 
 
